@@ -1,0 +1,19 @@
+body
+{
+    background-color: lemonchiffon;
+}
+h1{
+    text-align: center;
+    font-family: cursive;
+}
+.box_ques
+{
+    background-color: lightblue;
+}
+#card_horz{
+    justify-content: center;
+    text-align: center;
+}
+h3{
+    color: black;
+}
