@@ -1,0 +1,221 @@
+ /* Importing the fonts */
+ @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+
+ /* * {
+     margin: 0;
+     padding: 0;
+     outline: none;
+     box-sizing: border-box;
+     font-family: 'Montserrat', sans-serif;
+ } */
+
+ /* Body of the page */
+ body {
+     /* background: #f2f2f2; */
+     background-color: white;
+ }
+
+ /* Styling all the elements in nav as a whole */
+ nav {
+     background: #000000;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-between;
+     height: 70px;
+     padding: 0 100px;
+ }
+
+ /* Styling the logo */
+ nav .logo {
+     color: #fff;
+     font-size: 30px;
+     font-weight: 600;
+     letter-spacing: -1px;
+ }
+
+ /* Styling all the nav items as a whole */
+ nav .nav-items {
+     display: flex;
+     flex: 1;
+     padding: 0 0 0 200px;
+     font-family:Arial, Helvetica, sans-serif;
+ }
+
+ /* Styling the list items in the nav tag */
+ nav .nav-items li {
+     list-style: none;
+     padding: 0 10px;
+ }
+
+ /* Styling each list items */
+ nav .nav-items li a {
+     color: #fff;
+     font-size: 15px;
+     font-weight: 500;
+     text-decoration: none;
+ }
+
+ /* Setting the hover colour on the list items*/
+
+ nav .nav-items li a:hover {
+     color: #eaf394;
+ }
+
+ nav .searchbar {
+     position: relative;
+ }
+
+ /* Styling the search box where the
+     input would be given */
+ nav .searchbar input[type="text"] {
+     border: 0;
+     padding: 0;
+     width: 0px;
+     height: 35px;
+     border-radius: 3px;
+     transition: all 0.3s ease;
+ }
+
+ /* Styling the search bar icon */
+ nav .searchbar .icon {
+     display: flex;
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 35px;
+     height: 100%;
+     background: none;
+     border-radius: 3px;
+     color: #fff;
+     transition: all 0.5s 0.3s ease;
+ }
+
+ nav .searchbar .icon i {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     cursor: pointer;
+ }
+
+ nav .searchbar .icon.active {
+     background: #062333;
+     transition: all 0.3s ease;
+ }
+
+ nav .searchbar input[type="text"].active {
+     width: 250px;
+     padding: 0 10px;
+     transition: all 0.5s 0.2s ease;
+ }
+
+ nav .licon li {
+     list-style: none;
+     display: flex;
+ }
+
+ nav .licon li a {
+     padding: 0 20px;
+ }
+
+ /* Changing the colour of the login
+     icon when hovered over*/
+
+ .fa-user-circle:hover {
+     color: #acf1e8 !important;
+ }
+
+ #line {
+     display:inline-block;
+     font-size: 33px;
+     /* padding: 0 152px; */
+     /* text-align: center; */
+     font-family: "Quicksand", Sans-serif;
+     border: none;
+     margin: 10%;
+     margin-left: 2%;
+     margin-right: 59%;
+     border-radius: 15px;
+ }
+
+
+#first{
+margin: 5px 0;
+padding: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+/* min-height: 100vh; */
+/* background: #343F4F; */
+margin-top: 5%;
+border: 2px solid;
+border: none;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+display: flex;
+}
+.wrapper .static-txt{
+margin: 23px 0;
+color: black;
+font-size: 60px;
+font-weight: 400;
+}
+.wrapper .dynamic-txts{
+margin-left: -15px;
+height: 90px;
+line-height: 90px;
+overflow: hidden;
+}
+.dynamic-txts li{
+list-style: none;
+color: #FC6D6D;
+font-size: 60px;
+font-weight: 500;
+position: relative;
+top: 0;
+animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+100%{
+top: -360px;
+}
+}
+.dynamic-txts li span{
+position: relative;
+margin: 5px 0;
+line-height: 90px;
+}
+.dynamic-txts li span::after{
+margin-top: 10px;
+content: "";
+position: absolute;
+left: 0;
+height: 100%;
+width: 100%;
+background: white;
+border-left: 2px solid #FC6D6D;
+animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+40%, 60%{
+left: calc(100% + 30px);
+}
+100%{
+left: 0;
+}
+}
+
+#im{
+display: inline-block;
+float:right;
+margin-top: -23%;
+margin-right: 3%;
+}
+#im img{
+height: 250px;
+width: 285px;
+border-radius: 50%;
+}
