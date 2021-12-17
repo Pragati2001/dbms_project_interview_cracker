@@ -1,10 +1,12 @@
 body
 {
-    background-color: lemonchiffon;
+    background-color: purple;
 }
 h1{
     text-align: center;
     font-family: cursive;
+    /* margin-top: 23px; */
+    padding: 24px;
 }
 .box_ques
 {
@@ -17,3 +19,8 @@ h1{
 h3{
     color: black;
 }
+#extra{
+    padding: 23px;
+}
+/* #dbms_heading{
+} */
